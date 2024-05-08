@@ -10,8 +10,7 @@ const CardDeal = () => (
         steps.
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis
-        aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.
+      "In the arc, 'tortor, pure in mattresses at but integer faucets. Concession to concession for mauris tortor. Concession ultrices ac, ametau.'"
       </p>
 
       <Button styles={`mt-10`} />
