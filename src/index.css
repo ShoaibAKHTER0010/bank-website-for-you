@@ -31,7 +31,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 .bg-blue-gradient {
@@ -137,4 +137,46 @@
 .white__gradient {
   background: rgba(255, 255, 255, 0.6);
   filter: blur(750px);
+}
+
+
+/* moving animation */
+
+@media (prefers-reduced-motion:no-preference){
+  #start-btn{
+      animation:start-btn-move infinite 15s linear;
+      position: relative; /* Ensure the element can move */
+  }
+  #start-btn:hover{
+      animation-play-state: paused;
+  }
+}
+
+@keyframes start-btn-move{
+  0% {
+      left: 0;
+  }
+  50% {
+      left: 100px; /* Move 100px to the right */
+  }
+  100% {
+      left: 0; /* Move back to the starting position */
+  }
+}
+
+/* rotating animation */
+
+@media (prefers-reduced-motion:no-preference){
+  #card{
+      animation:card-spin infinite 20s linear;
+  }
+}
+
+@keyframes card-spin{
+  from{
+      transform:rotate(0deg);
+  }
+  to{
+      transform:rotate(360deg);
+  }
 }
