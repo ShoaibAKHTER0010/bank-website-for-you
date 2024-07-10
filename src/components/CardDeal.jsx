@@ -13,7 +13,7 @@ const CardDeal = () => (
       "In the arc, 'tortor, pure in mattresses at but integer faucets. Concession to concession for mauris tortor. Concession ultrices ac, ametau.'"
       </p>
 
-      <Button styles={`mt-10`} />
+      <Button styles={`my-10`} />
     </div>
 
     <div className={layout.sectionImg} id="card">
